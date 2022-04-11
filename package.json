@@ -14,11 +14,18 @@
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "socket.io-client": "^4.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:cli": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

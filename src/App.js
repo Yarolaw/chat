@@ -37,7 +37,7 @@ function App() {
           <TextField name='name' onChange={(e => onTextChange(e))} value={state.name} label='Name' id="standard-basic" variant="standard" />
         </div>
         <div className='name-field' >
-          <TextField name='message' onChange={(e => onTextChange(e))} id='outlined-multiline-static' variant="outlined" value={state.message} label='Name' />
+          <TextField name='message' onChange={(e => onTextChange(e))} id='outlined-multiline-static' variant="outlined" value={state.message} label='Message' />
         </div>
         <button>Send message</button>
         
